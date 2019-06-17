@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350sp"
+    android:padding="30sp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:background="@mipmap/close"
+        android:layout_gravity="end"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/newpass"
+            android:hint="Enter New Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/newpasupd"
+            android:hint="Confirm New Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no" />
+
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/updpssbtn"
+        android:layout_marginTop="20sp"
+        android:text="Update Password"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
